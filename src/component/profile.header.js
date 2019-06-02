@@ -54,7 +54,7 @@ export class ProfileHeader extends Component{
                             <span className='usd-1'>Currently in Bali</span>
                             <br/>
                             <span className='usd-1'>Get my editing presets below!</span>
-                            <h4 className='foll-usp'><b>Followed by </b><span>yestheory</span>,<span>sanjeet</span>,<span>amitsingh112</span> <b>+1 more</b></h4>
+                            <h4 className='foll-usp'><b>Followed by </b><span style={{fontWeight : 600}}>yestheory</span>,<span style={{fontWeight : 600}}>sanjeet</span>,<span style={{fontWeight : 600}}>amitsingh112</span> <b>+1 more</b></h4>
                         </div>
                     </section>
                 </Col>  
