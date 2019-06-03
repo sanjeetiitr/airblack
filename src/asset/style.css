@@ -32,6 +32,7 @@ background-color: #fafafa !important;
 }
 .btn-pf-1{
     margin: 0 6px 0 6px;
+    font-weight: 600 !important;
 }
 .btn-pf-2{
     margin: 0 6px 0 6px;
@@ -172,9 +173,9 @@ background-color: #fafafa !important;
 
 /* ****************************** */
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 0px; 
-    }
+    } */
 
 /* ****************************** */
 
@@ -184,3 +185,134 @@ background-color: #fafafa !important;
     font-weight: 600;
     padding: 15% 0 0% 0;
 }
+
+.btn-pf-3 {
+    background-color: transparent !important;
+    border : none !important;
+    box-shadow: none !important
+}
+
+.btn-pf-3 > i {
+    color: black;
+    font-size: 1.3rem !important;
+}
+.hdr-icon{
+    font-size: 1.5rem;
+    color: #262626;
+    /* flex: 0 0 0; */
+}
+.hdr-icon-2{
+    font-size: 1.5rem;
+    color: #262626;
+    font-weight: 200;
+    flex: 1 0 0; 
+}
+.hdr-ic-2{
+        font-size: 2rem;
+    font-weight: 400;
+    padding: 0 2% 0 2%;
+}
+.hdr-ic-3{
+    background-image: url(./img/instagram-logo-text-black-png.png);
+    background-size: 100%;
+    height: 100%;
+    width: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 2 0 0;
+}
+.hdr-ic-4{
+    margin-left: 15%;   
+    flex: 5 1 auto; 
+}
+.hdr-ic-4 > span> input {
+    background-color: #fafafa;
+    height: 28px;
+}
+
+.row-main{
+    margin-top: 10%;
+}
+
+.display-mob-hdr{
+    display: none !important;
+}
+.stry-main-sty{
+    margin-top: 3%;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .ant-layout-header{
+        padding: 0px 15px !important;
+    }
+    .hdr-icon > i {
+        font-size: 1.6rem !important;
+    }
+    .hdr-icon > i {
+        flex: 1 0 0px !important;
+    }
+    .hdr-ic-3{
+        flex: 2 0 !important;
+    }
+    .hdr-ic-4 {
+        margin-left: 12% !important;
+        flex: 2 1 auto !important;
+    }
+    .row-main{
+        margin-top: 18%;
+    }
+  }
+
+  @media (max-width: 767px) {
+  
+    .ant-layout-header{
+        padding: 0px 5px !important;
+    }
+    .hdr-ic-4{
+        display: block;
+    }
+    /* .mob-width{
+        box-sizing: border-box;
+        width: 33.33333333%;
+    } */
+    .row-main{
+        margin-top: 25%;
+    }
+    .pf-hd-img{
+        width: 77px!important;
+        height: 77px !important;
+    }
+    .display-mob-hdr{
+        display: flex !important;
+    }
+    .display-mob-hide{
+        display: none !important;
+    }
+    .stry-main-sty{
+        margin-top: 4%;
+    }
+    .stry-prf{
+        height: 64px !important;
+        width: 64px !important;
+    }
+    .stry-main{
+
+    padding: 0;
+    }
+    .str-txt{
+        font-size: 0.75rem; 
+        font-weight: 400; 
+    }
+    .stry-main > li {
+        margin-left: 2% !important;
+        margin-right: 2% !important;
+    }
+    .hdr-ic-3 {
+        flex: 2 0 0;
+        margin-right: 30%;
+    }
+    .hdr-icon{
+        margin-left: 4% !important;
+    }
+  }

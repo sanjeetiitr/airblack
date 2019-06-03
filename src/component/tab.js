@@ -38,12 +38,12 @@ export class TabView extends Component {
     }
 
     render() {
-        console.log(imageUrls.slice(0,5))
         return (
-            <Row type="flex" justify="center" style={{marginTop :  '2%'}}>
+            <Row type="flex" justify="center" style={{marginTop :  '2%',marginBottom : '15%'}}>
                 <Col
-                    sm={{ span: 18, offset: 0 }}
-                    mg={{ span: 18, offset: 0 }}
+                    xs={{ span: 24, offset: 0 }}
+                    sm={{ span: 24, offset: 0 }}
+                    mg={{ span: 24, offset: 0 }}
                     lg={{ span: 18, offset: 0 }}
                     xl={{ span: 18, offset: 0 }}
                 >
@@ -62,7 +62,7 @@ export class TabView extends Component {
                             dataLength={this.state.data.length}
                             next={this.fetchMoreData}
                             hasMore={this.state.hasMore}    
-                            scrollThreshold={.8}
+                            scrollThreshold={.9}
                             loader={<Spin indicator={antIcon} />}
                             endMessage={
                                 <p style={{ textAlign: "center" }}>
@@ -74,6 +74,7 @@ export class TabView extends Component {
 
                                 {this.state.data.map((index) => (
                                     <Col
+                                    xs={{ span: 8, offset: 0 }}
                                     style={{ padding : "1%"}}
                                     sm={{ span: 8, offset: 0 }}
                                     mg={{ span: 8, offset: 0 }}

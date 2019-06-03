@@ -7,10 +7,12 @@ export class StoryComp extends Component{
 
     render(){
         return(
-            <Row type="flex" justify="center" style={{marginTop :  '3%'}}>
+            <Row type="flex" justify="center" style={{}} className='stry-main-sty'>
                 <Col
-                    sm={{ span: 18, offset: 0 }}
-                    mg={{ span: 18, offset: 0 }}
+                style={{ overflowX: 'auto'}}
+                    xs={{ span: 24, offset: 0 }}
+                    sm={{ span: 24, offset: 0 }}
+                    mg={{ span: 24, offset: 0 }}
                     lg={{ span: 18, offset: 0 }}
                     xl={{ span: 18, offset: 0 }}
                 >
@@ -89,6 +91,44 @@ export class StoryComp extends Component{
                         </ul>
                     </div>
                     
+                </Col>
+                <Col
+                style={{borderTop : "1PX SOLID #EFEFEF"}}
+                className="display-mob-hdr"
+                xs={{ span: 24, offset: 0 }}
+                sm={{ span: 24, offset: 0 }}
+                mg={{ span: 24, offset: 0 }}
+                >
+                    <Col
+                    style={{textAlign : 'center',paddingTop: '2%'}}
+                    xs={{ span: 8, offset: 0 }}
+                    sm={{ span: 8, offset: 0 }}
+                    mg={{ span: 8, offset: 0 }}
+                    >
+                        <span  style={{fontWeight : 600,  color : '#262626', fontSize : '1rem'}}>754</span> 
+                        <br/> 
+                        <span style={{ fontSize : '1rem',  color : '#999'}}>posts</span>
+                    </Col>
+                    <Col
+                    style={{textAlign : 'center', paddingTop: '2%'}}
+                    xs={{ span: 8, offset: 0 }}
+                    sm={{ span: 8, offset: 0 }}
+                    mg={{ span: 8, offset: 0 }}
+                    >
+                        <span  style={{fontWeight : 600, color : '#262626', fontSize : '1rem'}}>2.7m</span> 
+                        <br/> 
+                        <span style={{ fontSize : '1rem',  color : '#999'}}>followers</span>
+                    </Col>
+                    <Col
+                    style={{textAlign : 'center', paddingTop: '2%'}}
+                    xs={{ span: 8, offset: 0 }}
+                    sm={{ span: 8, offset: 0 }}
+                    mg={{ span: 8, offset: 0 }}
+                    >
+                        <span  style={{fontWeight : 600,  color : '#262626', fontSize : '1rem'}}>334</span>
+                        <br/> 
+                        <span style={{ fontSize : '1rem',  color : '#999'}}>following</span>
+                    </Col>
                 </Col>
             </Row>
         )
