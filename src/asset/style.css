@@ -240,7 +240,9 @@ background-color: #fafafa !important;
 .stry-main-sty{
     margin-top: 3%;
 }
-
+.ant-layout-header{
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .ant-layout-header{
